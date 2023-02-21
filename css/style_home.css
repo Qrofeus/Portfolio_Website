@@ -1,0 +1,38 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    height: 100svh;
+}
+
+.introduction {
+    background: pink;
+}
+
+header {
+    background: purple;
+}
+
+nav {
+    background: yellow;
+}
+
+.my_projects {
+    /* background: red; */
+    color: white;
+}
+
+.projects {
+    height: 50%;
+    background: grey;
+}
+
+.book_summaries {
+    height: 50%;
+    background: green;
+}
