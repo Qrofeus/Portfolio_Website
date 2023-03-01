@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ninad Deshpande</title>
     <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Inter">
 </head>
 
 <body>
-    <section class="introduction">
-        <header>
-            <div class="my_name">Ninad Deshpande</div>
-            <div class="page_title">Home</div>
-
-            <nav>
-                <a href="projects.html">My Projects</a>
-                <a href="aboutme.html">About Me</a>
-                <button>Change Appearance</button>
-            </nav>
+    <section class="home_page">
+        <header class="nav_bar">
+            <div class="title_card">
+                <p class="my_name">Ninad Deshpande</p>
+                <p class="page_title">Home</p>
+            </div>
+            <a href="projects.html" class="nav_link projects_link">My Projects</a>
+            <a href="aboutme.html" class="nav_link">About Me</a>
+            <button class="mode_button nav_link">Dark Mode</button>
         </header>
-
-        <p class="welcome_tag">Hi, I am Ninad</p>
-        <p class="intro">
-            I am a software developer, looking for professional experience.
-            Working on my Google Data Analytics and AWS Cloud certifications.
-        </p>
-        <p id="openContact" onclick="highlightContact()" class="open_contact">Get in touch</p>
+        <div class="introduction">
+            <p class="welcome_tag">Hi, I am Ninad</p>
+            <p class="intro_text">
+                I am a student software developer, looking for professional experience.<br>
+                Currently working on some personal projects and certifications.
+            </p>
+            <a href="#contact_me" class="open_contact">Contact Me</a>
+        </div>
     </section>
 
     <section class="my_projects">
@@ -47,10 +48,10 @@
                 100 Days of Python
                 <!-- open github to 100 days of python -->
             </div>
-            <div>
-                More Projects
-                <!-- Open Projects page -->
-            </div>
+        </div>
+        <div>
+            More Projects
+            <!-- Open Projects page -->
         </div>
 
         <div class="book_summaries">
@@ -66,9 +67,12 @@
     </section>
 
     <section class="contact_form">
+        <p id="contact_me">Contact Me</p>
         <!-- form action -> open mailto: -->
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aspernatur dolor unde sint alias laborum
-        quisquam quo incidunt nemo. Autem.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, odio sit nam a sapiente dignissimos id laborum, accusantium aspernatur unde amet eveniet cumque illum vel repellendus quis, ducimus provident nostrum veritatis in! Aperiam velit, doloremque, odio laborum facere nemo accusamus repellendus quia libero aut tempora dolor ullam! Quis, odit eaque.</p>
+        <br>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure aliquid explicabo sit nesciunt quia eos architecto nobis impedit debitis deleniti harum suscipit et non ab excepturi, dignissimos dolore voluptates culpa. Veniam asperiores non facere distinctio ducimus magni ullam accusantium consequuntur voluptatibus minus, delectus repellat perferendis voluptatum quae reiciendis quisquam fugit!</p>
     </section>
 
 </body>
