@@ -1,0 +1,208 @@
+/* Property Resets */
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    /* line-height: 1.25em; */
+}
+
+/* CSS Variables */
+:root{
+    --clr-background: #F0F0F0;
+    --clr-primary: #2B3467;
+    --clr-highlight: #EB455F;
+
+    --clr-card: #FFFFFF;
+    --clr-gray: #D9D9D9;
+
+    --font-family: 'Inter', Helvetica, sans-serif;
+    --fw-small: 100;
+    --fw-normal: 400;
+    --fw-large: 700;
+
+    --fc-light: #F0F0F0;
+    --fc-dark: #101010;
+    --fc-span: #2B3467;
+    --fc-default: var(--fc-dark);
+
+    --transition-duration: 200ms;
+}
+
+/* Dark Mode Toggle Class */
+.dark_mode{
+    --clr-background: #333333;
+    --clr-card: #FCFFE7;
+
+    --fc-span: #FCFFE7;
+    --fc-default: var(--fc-light);
+}
+
+/* Tag standards */
+body{
+    font-family: var(--font-family);
+
+    background-color: var(--clr-background);
+    color: var(--fc-default);
+}
+
+section{
+    min-height: 75vh;
+}
+
+svg{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: var(--fw-large);
+    
+    background-color: var(--clr-highlight);
+    color: var(--fc-light);
+    outline: none;
+    border: none;
+
+    transform: scale(1);
+    transition: all var(--transition-duration);
+}
+
+.btn:hover,
+.btn:focus{
+    transform: scale(1.05);
+    background-color: #101010;
+}
+
+/* Navigation */
+header{    
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--clr-background);
+    padding: 0.5em 1em;
+}
+
+.nav_name{
+    font-weight: var(--fw-large);
+    font-size: 1.5em;
+
+    color: var(--fc-span);
+}
+
+.nav_bar_actions{
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.nav_link{
+    text-decoration: none;
+    font-weight: var(--fw-large);
+    
+    color: var(--fc-span);
+}
+
+/* Introduction */
+.introduction{
+    background: url("../img/introduction_img.jpg"), var(--clr-gray);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome_div{
+    width: 50%;
+    margin: auto 4rem;
+    
+    color: var(--fc-light);
+}
+
+.welcome_div span{
+    display: block;
+    font-size: 3em;
+
+    font-weight: var(--fw-large);
+    color: var(--clr-highlight);
+    
+    text-shadow: 2px 2px var(--fc-dark);
+}
+
+.welcome_tag{
+    margin-bottom: 1em;
+}
+
+.photo_credit{
+    color: var(--fc-light);
+    margin-inline: auto 0.25em;
+
+    opacity: 50%;
+}
+
+.photo_credit a{
+    text-decoration: unset;
+    color: var(--fc-light);
+}
+
+/* Highlight Projects */
+.highlight_projects{
+    background-color: var(--clr-primary);
+    min-height: auto;
+
+    padding: 3rem;
+}
+
+.highlight_projects .projects{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+
+    width: 80%;
+}
+
+.project_card_01{
+    background-color: var(--clr-card);
+    width: 30%;
+
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.project_card_01 span{
+    display: block;
+    
+    font-weight: var(--fw-large);
+    font-size: 1.25em;
+    color: var(--fc-span);
+
+    margin-block: 0.5em;
+}
+
+.project_card_01 img{
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
