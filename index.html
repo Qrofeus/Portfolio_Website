@@ -8,15 +8,10 @@
     <title>Ninad Deshpande</title>
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Inter">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style_home.css">
-
-    <!-- Scripts -->
-    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
-    <script defer src="scripts/contact_form.js"></script>
-    <script defer src="scripts/dark_mode.js"></script>
 </head>
 
 <body>
@@ -26,6 +21,7 @@
             <div class="nav_bar_actions">
                 <!-- <a href="./" class="nav_link">Home</a> -->
                 <a href="./#about" class="nav_link">About Me</a>
+                <a href="./#projects" class="nav_link">My Projects</a>
                 <a href="https://github.com/Qrofeus" target="_blank" class="nav_link">Github</a>
                 <a href="docs/Resume.pdf" target="_blank" class="nav_link">Resume</a>
                 <a href="./#contact" class="btn">Contact Me</a>
@@ -47,12 +43,7 @@
             </p>
             <a href="./#contact" class="btn">Get In Touch</a>
         </div>
-        <span class="photo_credit">
-            Photo by <a
-                href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emile
-                Perron</a> on <a
-                href="https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </span>
+        <span class="photo_credit">Photo by Emile Perron on Unsplash</span>
     </section>
 
     <section class="highlight_projects">
@@ -73,7 +64,7 @@
                     accusantium id neque facilis sed. Alias, deserunt?
                 </p>
             </a>
-            <a href="https://github.com/Qrofeus/Python_100" class="project_card_01">
+            <a href="https://github.com/Qrofeus/Python_100" target="_blank" class="project_card_01">
                 <img src="img/python_img.jpg">
                 <p class="project_card_text">
                     <span>100 Days of Python</span>
@@ -84,92 +75,117 @@
         </div>
     </section>
 
-    <section id="about" class="about_me">
-        <p class="sec_title">About Me</p>
-        <p>
-            I am pursuing my Masters in Computer Science at <br>
-            <span>--University Name--</span>
-        </p>
-    </section>
-
-    <section class="more_projects">
-        <div class="projects">
-            <div class="project_card_02">
-                <span>Project Title</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
-                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
-                repudiandae. Ea?
-            </div>
-            <div class="project_card_02">
-                <span>Project Title</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
-                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
-                repudiandae. Ea?
-            </div>
-            <div class="project_card_02">
-                <span>Project Title</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
-                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
-                repudiandae. Ea?
-            </div>
-            <div class="project_card_02">
-                <span>Project Title</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
-                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
-                repudiandae. Ea?
-            </div>
-            <div class="project_card_02">
-                <span>Project Title</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
-                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
-                repudiandae. Ea?
+    <section id="about">
+        <span class="sec_title">About Me</span>
+        <div class="about">
+            <img src="img/ninad_about.jpg" alt="">
+            <div class="about_text">
+                <p>I am currently pusuing my Masters in Computer Science at <span>--University Name--</span>. And
+                    working on some professional certifications and personal projects on the way.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam harum ratione, beatae
+                    accusantium accusamus iure voluptas sed in autem doloremque quam rem quas praesentium quasi
+                    architecto cum mollitia quis dolorum? Mollitia laudantium laboriosam sit facilis voluptatibus
+                    voluptate corporis ab. Commodi.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et voluptate eaque eius nobis, laborum
+                    atque tempore magni sed! Officia aspernatur impedit sapiente non nostrum, nemo placeat at facere
+                    mollitia facilis minima architecto accusamus sit dolor adipisci possimus voluptates et.
+                </p>
+                <div class="about_links">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="btn about_btn">Certifications</a>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="btn about_btn">Publications</a>
+                </div>
             </div>
         </div>
-        <a href="https://github.com/Qrofeus" target="_blank" class="btn">Open Github</a>
+    </section>
+
+    <section class="more_projects" id="projects">
+        <div class="projects">
+            <span class="sec_title">My Projects</span>
+            <div class="project_card_02">
+                <span>--Project Title--</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
+                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
+                repudiandae. Ea?
+            </div>
+            <div class="project_card_02">
+                <span>--Project Title--</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
+                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
+                repudiandae. Ea?
+            </div>
+            <div class="project_card_02">
+                <span>--Project Title--</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
+                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
+                repudiandae. Ea?
+            </div>
+            <div class="project_card_02">
+                <span>--Project Title--</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
+                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
+                repudiandae. Ea?
+            </div>
+            <div class="project_card_02">
+                <span>--Project Title--</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus dolores dolorum quibusdam enim
+                quas veniam, eum porro eligendi! Voluptatem quis tempore suscipit quae dolorum. Dicta voluptate autem
+                repudiandae. Ea?
+            </div>
+            <a href="https://github.com/Qrofeus" target="_blank" class="btn">Open Github</a>
+        </div>
     </section>
 
     <section id="contact" class="contact_form">
         <p class="sec_title">Contact Me</p>
-        <p>
-            Fill out the contact form or mail me directly at <span>ninad.deshpande46@gmail.com</span>
+        <p>Fill out the contact form or mail me directly at
+            <span><a href="mailto:ninad.deshpande46@gmail.com">ninad.deshpande46@gmail.com</a></span>
         </p>
         <form onsubmit="send_email(); reset(); return false;">
             <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required></input>
             <input type="email" id="form_mail" class="contact_field" placeholder="Email Address*" required></input>
             <input type="tel" id="form_phone" class="contact_field" placeholder="Phone Number">
-            <textarea id="form_message" class="contact_field contact_message" rows="4"
-                placeholder="How can I help you?*" required></textarea>
+            <textarea id="form_message" class="contact_field" rows="5" placeholder="How can I help you?*"
+                required></textarea>
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
 
     <div class="footer">
-        <p>Socials</p>
-        <div class="scoials_link">
-            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-                <title>Gmail</title>
-                <path
-                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-            </svg>
-            <a href="mailto:ninad.deshpande46@gmail.com" class="socials_a" target="_blank">Gmail</a>
-        </div>
-        <div class="scoials_link">
-            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-                <title>LinkedIn</title>
-                <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-            <a href="https://www.linkedin.com/in/qrofeus/" class="socials_a" target="_blank">Linked In</a>
-        </div>
-        <div class="scoials_link">
-            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="socials_icon">
-                <title>GitHub</title>
-                <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-            </svg>
-            <a href="https://github.com/Qrofeus" class="socials_a" target="_blank">Github</a>
+        <span class="sec_title">Socials:</span>
+        <div class="footer_links">
+            <a class="socials_link" href="mailto:ninad.deshpande46@gmail.com" target="_blank">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Gmail</title>
+                    <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+                Gmail
+            </a>
+            <a class="socials_link" href="https://www.linkedin.com/in/qrofeus/" target="_blank">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>LinkedIn</title>
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                Linked In
+            </a>
+            <a class="socials_link" href="https://github.com/Qrofeus" target="_blank">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+                Github
+            </a>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/contact_form.js"></script>
+    <script src="scripts/dark_mode.js"></script>
 </body>
 
 </html>
