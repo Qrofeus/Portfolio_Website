@@ -9,6 +9,6 @@ function send_email() {
             +  "<br>Phone No.: " + document.getElementById("form_phone").value
             +  "<br>Message: " + document.getElementById("form_message").value
     }).then(
-      message => alert("Successfully sent Contact enquiry.")
+      message => alert("Successfully sent contact enquiry.")
     );
 }

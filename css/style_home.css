@@ -29,7 +29,7 @@ CSS Index
 
 /* CSS Variables */
 :root {
-    --clr-background: #F0F0F0;
+    --clr-background: #FFFFFF;
     --clr-primary: #2B3467;
     --clr-highlight: #EB455F;
 
@@ -46,6 +46,8 @@ CSS Index
     --fc-span: #2B3467;
     --fc-default: var(--fc-dark);
 
+    --form-background: #FFFFFF;
+
     --transition-duration: 200ms;
 }
 
@@ -54,8 +56,10 @@ CSS Index
     --clr-background: #333333;
     --clr-card: #333333;
 
-    --fc-span: #FCFFE7;
+    --fc-span: #F0F0F0;
     --fc-default: var(--fc-light);
+
+    --form-background: #FCFFE7;
 }
 
 /* Standards */
@@ -74,30 +78,29 @@ section {
 svg {
     height: 1.25rem;
     width: 1.25rem;
-    /* transition: all var(--transition-duration); */
 }
-
-/* svg:hover{
-    transform: scale(1.05);
-} */
 
 a {
-    text-decoration: none;
-    color: inherit;
+    all: unset;
+    cursor: pointer;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 
     gap: 0.5em;
 }
 
-textarea{
+textarea {
+    resize: vertical;
+}
+
+::placeholder{
     font-family: var(--font-family);
 }
 
-.sec_title{
+.sec_title {
     font-size: 2em;
     font-weight: var(--fw-large);
 
@@ -105,6 +108,11 @@ textarea{
 }
 
 /* Buttons */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     padding: 0.5em 1em;
@@ -112,7 +120,6 @@ textarea{
 
     text-decoration: none;
     text-align: center;
-    font-size: 1rem;
     font-weight: var(--fw-large);
 
     background-color: var(--clr-highlight);
@@ -205,7 +212,7 @@ header {
 
     display: flex;
     flex-direction: column;
-    
+
     padding-bottom: 0;
     padding-right: 0;
 }
@@ -260,15 +267,17 @@ header {
 
 .projects {
     display: flex;
-    justify-content: space-between;
     margin-inline: auto;
+    gap: 1rem;
 
     width: 90%;
 }
 
 .project_card_01 {
     background-color: var(--clr-card);
-    width: 32%;
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
 
     padding: 1em;
     border-radius: 4px;
@@ -278,7 +287,7 @@ header {
 
 .project_card_01:hover,
 .project_card_01:focus {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .project_card_01 span {
@@ -297,34 +306,45 @@ header {
     border-radius: 5px;
 }
 
+.project_card_01 .project_links {
+    margin-top: 1rem;
+    display: flex;
+
+    gap: 0.5rem;
+}
+
+.project_card_01 .btn {
+    flex: 1;
+}
+
 /* About Me */
-.about{
+.about {
     padding-block: 2em;
 
     display: flex;
     gap: 2em;
 }
 
-.about img{
+.about img {
     width: 25%;
     object-fit: cover;
 
     border-radius: 5px;
 }
 
-.about span{
+.about span {
     font-weight: var(--fw-large);
     color: var(--clr-highlight);
 }
 
-.about_text{
+.about_text {
     display: flex;
     flex-direction: column;
 
     justify-content: space-around;
 }
 
-.about_links{
+.about_links {
     display: flex;
     justify-content: space-between;
 
@@ -332,29 +352,29 @@ header {
     /* justify-content: center; */
 }
 
-.about_btn{
+.about_btn {
     flex: 1;
 }
 
 /* More Projects */
-.more_projects{
+.more_projects {
     background-color: var(--clr-primary);
 }
 
-.more_projects .sec_title{
+.more_projects .sec_title {
     color: var(--fc-light);
 }
 
-.more_projects .projects{
+.more_projects .projects {
     flex-direction: column;
     gap: 1em;
 }
 
-.more_projects .btn{
+.more_projects .btn {
     margin-left: auto;
 }
 
-.project_card_02{
+.project_card_02 {
     background-color: var(--clr-background);
     display: flex;
     gap: 0.5em;
@@ -366,7 +386,7 @@ header {
     transition: all var(--transition-duration);
 }
 
-.project_card_02 span{
+.project_card_02 span {
     font-weight: var(--fw-large);
     font-size: 1.25em;
 
@@ -374,12 +394,12 @@ header {
 }
 
 .project_card_02:hover,
-.project_card_02:focus{
+.project_card_02:focus {
     transform: scale(1.05);
 }
 
 /* Contact Form */
-.contact_form{
+.contact_form {
     width: 80%;
     margin-inline: auto;
 
@@ -389,32 +409,32 @@ header {
     gap: 1em;
 }
 
-.contact_form span{
+.contact_form span {
     font-weight: var(--fw-large);
     color: var(--clr-highlight);
 }
 
-.contact_form .btn{
+.contact_form .btn {
     margin-right: auto;
 }
 
-.contact_field{
+.contact_field {
     width: 100%;
     border-radius: 5px;
 
+    background-color: var(--form-background);
     border: 1px solid var(--clr-gray);
 
     padding: 1em 1.5em;
-    /* font-family: Helvetica, sans-serif; */
 }
 
 .contact_field:hover,
-.contact_field:focus{
+.contact_field:focus {
     outline: 1px solid var(--clr-highlight);
 }
 
 /* Footer */
-.footer{
+.footer {
     background-color: var(--clr-primary);
     padding: 1.5em;
 
@@ -425,30 +445,39 @@ header {
     align-items: center;
 }
 
-.footer span{
+.footer span {
     color: var(--fc-light);
     font-size: 1.25em;
 }
 
-.footer_links{
+.footer_links {
     margin-inline: auto;
     display: flex;
     gap: 1em;
 }
 
-.socials_link{
+.socials_link {
     display: flex;
     gap: 0.25em;
     padding: 0.5em 1em;
+    border-radius: 5px;
 
     align-items: center;
 
     text-transform: capitalize;
     color: var(--fc-light);
     fill: var(--fc-light);
+
+    transition: all var(--transition-duration);
 }
 
 .socials_link:hover,
-.socials_link:focus{
-    outline: 1px solid var(--clr-highlight);
+.socials_link:focus {
+    background-color: var(--fc-light);
+
+    font-weight: var(--fw-large);
+    color: var(--fc-dark);
+    fill: var(--fc-dark);
+
+    transform: scale(1.05);
 }
