@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Website deployed: https://qrofeus.github.io/Portfolio_Website/
+Website deployed: https://qrofeus.github.io/portfolio-website/
 
 ## Work in Progress:
 
