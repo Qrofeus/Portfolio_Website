@@ -72,12 +72,13 @@ body {
 
 section {
     min-height: 75vh;
-    padding: 3rem 3rem;
 }
 
 svg {
     height: 1.25rem;
     width: 1.25rem;
+
+    cursor: pointer;
 }
 
 a {
@@ -94,6 +95,7 @@ form {
 
 textarea {
     resize: vertical;
+    font-family: var(--font-family);
 }
 
 ::placeholder{
@@ -105,6 +107,17 @@ textarea {
     font-weight: var(--fw-large);
 
     color: var(--fc-span);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
 }
 
 /* Buttons */
@@ -134,7 +147,6 @@ button {
 
 .btn:hover,
 .btn:focus {
-    transform: scale(1.05);
     background-color: var(--fc-dark);
 }
 
@@ -202,213 +214,8 @@ header {
 }
 
 /* Introduction */
-.introduction {
-    background: url("../img/introduction_img.jpg"), var(--clr-gray);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    min-height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-
-    padding-bottom: 0;
-    padding-right: 0;
-}
-
-.welcome_div {
-    width: 50%;
-    margin: auto 4rem;
-
-    color: var(--fc-light);
-}
-
-.welcome_div span {
-    display: block;
-    font-size: 3em;
-
-    font-weight: var(--fw-large);
-    color: var(--clr-highlight);
-
-    text-shadow: 2px 2px var(--fc-dark);
-}
-
-.welcome_tag {
-    margin-bottom: 1em;
-}
-
-.photo_credit {
-    font-size: 0.75em;
-
-    color: var(--fc-light);
-    margin-inline: auto 0.25em;
-
-    opacity: 50%;
-}
-
-.photo_credit a {
-    text-decoration: unset;
-    color: var(--fc-light);
-}
-
-.photo_credit a:hover,
-.photo_credit a:focus {
-    outline: var(--clr-highlight) solid 1px;
-}
-
-/* Highlight Projects */
-.highlight_projects {
-    background-color: var(--clr-primary);
-    min-height: auto;
-
-    padding: 3rem;
-}
-
-.projects {
-    display: flex;
-    margin-inline: auto;
-    gap: 1rem;
-
-    width: 90%;
-}
-
-.project_card_01 {
-    background-color: var(--clr-card);
-    display: flex;
-    flex-direction: column;
-    /* width: 30%; */
-
-    padding: 1em;
-    border-radius: 4px;
-
-    transition: all var(--transition-duration);
-}
-
-.project_card_01:hover,
-.project_card_01:focus {
-    transform: scale(1.02);
-}
-
-.project_card_01 span {
-    display: block;
-
-    font-weight: var(--fw-large);
-    font-size: 1.25em;
-    color: var(--fc-span);
-
-    margin-block: 0.5em;
-}
-
-.project_card_01 img {
-    width: 100%;
-    object-fit: scale-down;
-    border-radius: 5px;
-}
-
-.project_card_01 .project_links {
-    margin-top: 1rem;
-    display: flex;
-
-    gap: 0.5rem;
-}
-
-.project_card_01 .btn {
-    flex: 1;
-}
-
-/* About Me */
-.about {
-    padding-block: 2em;
-
-    display: flex;
-    gap: 2em;
-}
-
-.about img {
-    width: 25%;
-    object-fit: cover;
-
-    border-radius: 5px;
-}
-
-.about span {
-    font-weight: var(--fw-large);
-    color: var(--clr-highlight);
-}
-
-.about_text {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-around;
-}
-
-.about_links {
-    display: flex;
-    justify-content: space-between;
-
-    gap: 1em;
-    /* justify-content: center; */
-}
-
-.about_btn {
-    flex: 1;
-}
-
-/* More Projects */
-.more_projects {
-    background-color: var(--clr-primary);
-}
-
-.more_projects .sec_title {
-    color: var(--fc-light);
-}
-
-.more_projects .projects {
-    flex-direction: column;
-    gap: 1em;
-}
-
-.more_projects .btn {
-    margin-left: auto;
-}
-
-.project_card_02 {
-    background-color: var(--clr-background);
-    display: flex;
-    gap: 0.5em;
-
-    padding: 0.5em 1em;
-    border-radius: 5px;
-
-    transform: scale(1);
-    transition: all var(--transition-duration);
-}
-
-.project_card_02 span {
-    font-weight: var(--fw-large);
-    font-size: 1.25em;
-
-    min-width: 25%;
-}
-
-.project_card_02:hover,
-.project_card_02:focus {
-    transform: scale(1.05);
-}
 
 /* Contact Form */
-.contact_form {
-    width: 80%;
-    margin-inline: auto;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 1em;
-}
-
 .contact_form span {
     font-weight: var(--fw-large);
     color: var(--clr-highlight);
@@ -478,6 +285,4 @@ header {
     font-weight: var(--fw-large);
     color: var(--fc-dark);
     fill: var(--fc-dark);
-
-    transform: scale(1.05);
 }
