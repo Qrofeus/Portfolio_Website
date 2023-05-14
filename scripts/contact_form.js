@@ -6,7 +6,6 @@ async function send_email() {
           Subject : "New contact form enquiry",
           Body : "Name: " + document.getElementById("form_name").value
               +  "<br>Mail Id: " + document.getElementById("form_mail").value
-              +  "<br>Phone No.: " + document.getElementById("form_phone").value
               +  "<br>Message: " + document.getElementById("form_message").value
       })
       .then(

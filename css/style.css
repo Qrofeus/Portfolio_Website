@@ -1,30 +1,11 @@
-/* 
-CSS Index
-
-1. Property Reset
-2. CSS Variables
-3. Dark Mode Toggle Class
-4. HTML Tag standards
-5. Button
-6. Navigation
-7. Introduction
-8. Highlight Projects
-9. About Me
-10. More Projects
-11. Contact Me
-12. Socials
-*/
-
 /* Property Resets */
+/* html{
+    color-scheme: light dark;
+} */
+
 * {
-    scroll-behavior: smooth;
     box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
-    outline: none;
-
-    scrollbar-width: thin;
+    outline: transparent;
 }
 
 /* CSS Variables */
@@ -52,7 +33,7 @@ CSS Index
 }
 
 /* Dark Mode Toggle Class */
-.dark_mode {
+/* .dark_mode {
     --clr-background: #333333;
     --clr-card: #333333;
 
@@ -60,25 +41,27 @@ CSS Index
     --fc-default: var(--fc-light);
 
     --form-background: #FCFFE7;
-}
+} */
 
 /* Standards */
 body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
     font-family: var(--font-family);
+    font-size: 1.125rem;
+    line-height: 1.25;
 
     background-color: var(--clr-background);
     color: var(--fc-default);
 }
 
-section {
-    min-height: 75vh;
-}
-
 svg {
+    /* width: 0;
+    height: 0; */
     height: 1.25rem;
     width: 1.25rem;
-
-    cursor: pointer;
 }
 
 a {
@@ -93,13 +76,12 @@ form {
     gap: 0.5em;
 }
 
-textarea {
-    resize: vertical;
-    font-family: var(--font-family);
+input, textarea, ::placeholder {
+    font: inherit;
 }
 
-::placeholder{
-    font-family: var(--font-family);
+textarea {
+    resize: vertical;
 }
 
 .sec_title {
@@ -167,19 +149,16 @@ header {
     padding: 0.5em 1em;
 }
 
-.nav_name {
-    font-weight: var(--fw-large);
-    font-size: 1.75em;
-
-    color: var(--clr-highlight);
-    text-shadow: 1px 1px var(--fc-dark);
+.nav_logo {
+    height: 1.75em;
+    width: 1.75em;
 }
 
 .nav_bar_actions {
     display: flex;
     align-items: center;
 
-    gap: 1em;
+    gap: 0.25em;
 }
 
 .nav_link {
@@ -213,32 +192,14 @@ header {
     transform: scale(1, 1);
 }
 
-/* Introduction */
-
-/* Contact Form */
-.contact_form span {
-    font-weight: var(--fw-large);
-    color: var(--clr-highlight);
+.container {
+    width: min(80ch, 100% - 4rem);
+    margin-inline: auto;
 }
 
-.contact_form .btn {
-    margin-right: auto;
-}
-
-.contact_field {
-    width: 100%;
-    border-radius: 5px;
-
-    background-color: var(--form-background);
-    border: 1px solid var(--clr-gray);
-
-    padding: 1em 1.5em;
-}
-
-.contact_field:hover,
-.contact_field:focus {
-    outline: 1px solid var(--clr-highlight);
-}
+/* .icon {
+    
+} */
 
 /* Footer */
 .footer {
