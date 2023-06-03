@@ -30,3 +30,23 @@ dark_mode_toggle.addEventListener("click", () => {
         disable_dark_mode();
     }
 })
+
+// Observer for overlap with footer
+const footer = document.querySelector("footer");
+
+const footer_observer = new IntersectionObserver(function(
+    entries,
+    content_observer
+) {
+    entries.forEach(entry => {
+        console.log(entry.target);
+        console.log(entry.isIntersecting);
+        if (entry.isIntersecting) {
+            dark_mode_toggle.classList.add("footer_overlap");
+        } else {
+            dark_mode_toggle.classList.remove("footer_overlap");
+        }
+    });
+});
+
+footer_observer.observe(footer);

@@ -8,40 +8,39 @@
     <title>Ninad Deshpande</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="nav_bar">
-            <svg class="nav_logo">
-                <use href="#logo"></use>
+    <nav>
+        <a href="#">
+            <svg class="nav_logo"><use href="#logo"></use>
             </svg>
-            <div class="nav_bar_actions">
-                <a href="./#about" class="nav_link">About</a>
-                <a href="./#projects" class="nav_link">Projects</a>
-                <a href="docs/Resume.pdf" target="_blank" class="nav_link">Resume</a>
-                <a href="./#contact" class="btn">Contact Me</a>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="dark_mode_toggle"
-                    class="dark_mode_toggle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-                </svg> -->
-            </div>
-        </nav>
-    </header>
+        </a>
+        <div class="nav_bar_actions">
+            <a href="./#about" class="nav_link">About</a>
+            <a href="./#projects" class="nav_link">Projects</a>
+            <a href="assets/docs/Resume.pdf" target="_blank" class="nav_link">Resume</a>
+            <a href="./#contact" class="btn">Contact Me</a>
+        </div>
+    </nav>
+    <div class="nav_interact"></div>
 
     <div class="container">
-        <div class="introduction">
-            <img src="assets/img/img_illustration_02.png">
-            <div class="intro_text">
+        <section class="introduction">
+            <div class="text">
                 Hi, I am
-                <span class="name">Ninad Deshpande</span>
-                <span>I am a Software Developer</span>
+                <span>Ninad Deshpande</span>
+                <span class="title">I am a Software Developer</span>
                 Currently working on some personal projects and online certifications.
                 <div class="links">
+                    <a href="./#contact" class="btn">Get In Touch</a>
                     <a href="https://www.linkedin.com/in/qrofeus/" target="_blank">
                         <svg class="icon">
                             <use href="#linked_in"></use>
@@ -52,179 +51,229 @@
                             <use href="#github"></use>
                         </svg>
                     </a>
-                    <a href="./#contact" class="btn">Get In Touch</a>
                 </div>
             </div>
-        </div>
-
-        <span class="section_title" id="projects">Projects</span>
-        <div class="project_card">
-            <img src="" alt="" class="project_img">
-            <div class="project_desc">
-                <span class="title">Project Title</span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                doloremque eligendi earum!
-                <span class="techs">HTML, CSS, JavaScript</span>
-                <div class="project_links">
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#live"></use>
-                        </svg>
-                        Live Project
-                    </a>
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#code"></use>
-                        </svg>
-                        Code
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="project_card">
-            <img src="" alt="" class="project_img">
-            <div class="project_desc">
-                <span class="title">Project Title</span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                doloremque eligendi earum!
-                <span class="techs">Python</span>
-                <div class="project_links">
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#live"></use>
-                        </svg>
-                        Live Project
-                    </a>
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#code"></use>
-                        </svg>
-                        Code
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="project_card">
-            <img src="" alt="" class="project_img">
-            <div class="project_desc">
-                <span class="title">Project Title</span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                doloremque eligendi earum!
-                <span class="techs">HTML, CSS, JavaScript</span>
-                <div class="project_links">
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#live"></use>
-                        </svg>
-                        Live Project
-                    </a>
-                    <a href="" class="btn">
-                        <svg>
-                            <use href="#code"></use>
-                        </svg>
-                        Code
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <span class="sec_title">Other Projects</span>
-        <div class="other_projects">
-            <div class="project_box">
-                <div class="box_title">
-                    <span class="title">Project Title</span>
-                    <a href="http://" target="_blank">
-                        <svg>
-                            <use href="#open"></use>
-                        </svg>
-                    </a>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
-                <span class="techs">HTML, CSS, JavaScript</span>
-            </div>
-            <div class="project_box">
-                <div class="box_title">
-                    <span class="title">Project Title</span>
-                    <a href="http://" target="_blank">
-                        <svg>
-                            <use href="#open"></use>
-                        </svg>
-                    </a>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
-                <span class="techs">HTML, CSS, JavaScript</span>
-            </div>
-            <div class="project_box">
-                <div class="box_title">
-                    <span class="title">Project Title</span>
-                    <a href="http://" target="_blank">
-                        <svg>
-                            <use href="#open"></use>
-                        </svg>
-                    </a>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
-                <span class="techs">HTML, CSS, JavaScript</span>
-            </div>
-        </div>
-
-        <span class="sec_title" id="about">About Me</span>
-        <div class="about">
-            <img src="" alt="Ninad Deshpande">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aut sunt officiis delectus officia debitis tempora ex odio architecto quod. Quod sunt eaque atque ab saepe explicabo reiciendis, est incidunt!</p>
-        </div>
-        <span class="sec_title">Education</span>
-        <div class="education">
-            <span class="title">Indiana University, Purdue University, Indianpolis</span>
-            <span class="dates">Aug 2023 - Present</span>
-            Attending my MS course in Computer Science.
-        </div>
-        <div class="education">
-            <span class="title">AISSMS' Institute of Information Technology</span>
-            <span class="dates">Aug 2018 - May 2022</span>
-            Completed my BE course in Computer Engineering achieving grade First Class with Distinction with a C.G.P.A of 9.25/10. Also completed a honors course in "Data Science" simultaneously.
-        </div>
-        
-        <section id="contact" class="contact_form">
-            <p class="sec_title">Send me a message</p>
-            <p>Fill out the contact form or mail me directly at
-                <span><a href="mailto:ninad.deshpande46@gmail.com">ninad.deshpande46@gmail.com</a></span>
-            </p>
-            <form onsubmit="send_email(); reset(); return false;">
-                <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required></input>
-                <input type="email" id="form_mail" class="contact_field" placeholder="Email Address*" required></input>
-                <textarea id="form_message" class="contact_field" rows="5" placeholder="Your Message*" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            <img src="assets/img/img_illustration_02.png">
         </section>
+
+        <section id="projects">
+            <span class="section_title">Projects</span>
+            <div class="project_card">
+                <img src="assets/img/demo.jpg" alt="" class="project_img">
+                <div class="project_desc">
+                    <div class="text">
+                        <span class="title">Project Title</span>
+                        <code class="techs">HTML, CSS, JavaScript</code>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
+                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
+                        doloremque eligendi earum!
+                    </div>
+                    <div class="project_links">
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#live"></use>
+                            </svg>
+                            Live
+                        </a>
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#code"></use>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card">
+                <img src="assets/img/demo.jpg" alt="" class="project_img">
+                <div class="project_desc">
+                    <div class="text">
+                        <span class="title">Project Title</span>
+                        <code class="techs">Python</code>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
+                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
+                        doloremque eligendi earum!
+                    </div>
+                    <div class="project_links">
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#live"></use>
+                            </svg>
+                            Live
+                        </a>
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#code"></use>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card">
+                <img src="assets/img/demo.jpg" alt="" class="project_img">
+                <div class="project_desc">
+                    <div class="text">
+                        <span class="title">Project Title</span>
+                        <code class="techs">HTML, CSS, JavaScript</code>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
+                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
+                        doloremque eligendi earum!
+                    </div>
+                    <div class="project_links">
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#live"></use>
+                            </svg>
+                            Live
+                        </a>
+                        <a href="" class="btn">
+                            <svg>
+                                <use href="#code"></use>
+                            </svg>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other_projects">
+            <span class="section_title">Other Projects</span>
+            <div class="other_projects">
+                <div class="project_box">
+                    <div class="box_title">
+                        <span class="title">Project Title</span>
+                        <a href="http://" target="_blank">
+                            <svg>
+                                <use href="#open"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <code class="techs">HTML, CSS, JavaScript</code>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
+                </div>
+                <div class="project_box">
+                    <div class="box_title">
+                        <span class="title">Project Title</span>
+                        <a href="http://" target="_blank">
+                            <svg>
+                                <use href="#open"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <code class="techs">HTML, CSS, JavaScript</code>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
+                </div>
+                <div class="project_box">
+                    <div class="box_title">
+                        <span class="title">Project Title</span>
+                        <a href="http://" target="_blank">
+                            <svg>
+                                <use href="#open"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <code class="techs">HTML, CSS, JavaScript</code>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
+                </div>
+                <div class="project_box">
+                    <div class="box_title">
+                        <span class="title">Project Title</span>
+                        <a href="http://" target="_blank">
+                            <svg>
+                                <use href="#open"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <code class="techs">HTML, CSS, JavaScript</code>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
+                </div>
+                <div class="project_box">
+                    <div class="box_title">
+                        <span class="title">Project Title</span>
+                        <a href="http://" target="_blank">
+                            <svg>
+                                <use href="#open"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <code class="techs">HTML, CSS, JavaScript</code>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <span class="section_title">About Me</span>
+            <div class="about">
+                <img src="assets/img/profile-placeholder.jpg" alt="Ninad Deshpande">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa quos impedit, quae nihil atque iste repudiandae quas praesentium vitae repellendus veniam sunt excepturi consequatur exercitationem ipsa! Adipisci, molestias fugiat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi nisi laboriosam obcaecati distinctio voluptatem alias illo culpa vitae consequuntur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <span class="section_title">Education</span>
+            <div class="education">
+                <span class="title">Indiana University, Purdue University, Indianpolis</span>
+                <code class="dates">Aug 2023 - Present</code>
+                <div class="text">
+                    <code>Indianpolis, US</code>
+                    Attending my MS course in Computer and Information Science.
+                </div>
+            </div>
+            <div class="education">
+                <span class="title">AISSMS' Institute of Information Technology</span>
+                <code class="dates">Aug 2018 - May 2022</code>
+                <div class="text">
+                    <code>Pune, India</code>
+                    Completed my BE course in Computer Engineering achieving grade First Class with Distinction with a C.G.P.A of <strong>9.25/10</strong>. Also completed a honors course in <strong>Data Science</strong> simultaneously.
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <span class="section_title">Send me a message</span>
+            <div class="contact">
+                Fill out the contact form or mail me directly at <span><a href="mailto:ninad.deshpande46@gmail.com">ninad.deshpande46@gmail.com</a></span>
+                <form onsubmit="send_email(); reset(); return false;">
+                    <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required></input>
+                    <input type="email" id="form_mail" class="contact_field" placeholder="Email Address*" required></input>
+                    <textarea id="form_message" class="contact_field" rows="5" placeholder="Your Message*" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <button id="dark_mode_toggle" class="dark_mode_btn">
+            <svg><use href="#darkmode"></use>
+            </svg>
+        </button>
     </div>
 
-    <div class="footer">
-        <span class="sec_title">Socials:</span>
-        <div class="footer_links">
-            <a class="socials_link" href="mailto:ninad.deshpande46@gmail.com" target="_blank">
-                <svg class="icon">
-                    <use href="#gmail"></use>
-                </svg>
-                Gmail
-            </a>
-            <a class="socials_link" href="https://www.linkedin.com/in/qrofeus/" target="_blank">
-                <svg class="icon">
-                    <use href="#linked_in"></use>
-                </svg>
-                Linked In
-            </a>
-            <a class="socials_link" href="https://github.com/Qrofeus" target="_blank">
-                <svg class="icon">
-                    <use href="#github"></use>
-                </svg>
-                Github
-            </a>
-        </div>
-    </div>
+    <footer>
+        <a class="btn socials_link" href="mailto:ninad.deshpande46@gmail.com" target="_blank">
+            <svg class="icon">
+                <use href="#gmail"></use>
+            </svg>
+            Gmail
+        </a>
+        <a class="btn socials_link" href="https://www.linkedin.com/in/qrofeus/" target="_blank">
+            <svg class="icon">
+                <use href="#linked_in"></use>
+            </svg>
+            Linked In
+        </a>
+        <a class="btn socials_link" href="https://github.com/Qrofeus" target="_blank">
+            <svg class="icon">
+                <use href="#github"></use>
+            </svg>
+            Github
+        </a>
+    </footer>
 
     <!-- SVGs -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -241,7 +290,7 @@
                 d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
         </symbol>
         <symbol id="logo" viewBox="0 0 350 350" enable-background="new 0 0 350 350">
-            <path fill="#7C4894" opacity="1.000000" stroke="none" d="
+            <path opacity="1.000000" stroke="none" d="
             M5.216879,182.744934 
                 C2.847384,136.517731 19.722443,98.595955 52.142933,65.951714 
                 C61.200195,78.000092 69.762749,89.390388 78.443733,100.938225 
@@ -328,12 +377,16 @@
         <symbol id="open" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h6q.425 0 .713.288T12 4q0 .425-.288.713T11 5H5v14h14v-6q0-.425.288-.713T20 12q.425 0 .713.288T21 13v6q0 .825-.588 1.413T19 21H5Zm4-6q-.275-.275-.275-.7T9 13.6L17.6 5H15q-.425 0-.713-.288T14 4q0-.425.288-.713T15 3h5q.425 0 .713.288T21 4v5q0 .425-.288.713T20 10q-.425 0-.713-.288T19 9V6.4l-8.625 8.625q-.275.275-.675.275T9 15Z"/>
         </symbol>
+        <symbol id="darkmode" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        </symbol>
     </svg>
 
     <!-- Scripts -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="scripts/contact_form.js"></script>
-    <!-- <script src="scripts/dark_mode.js"></script> -->
+    <script src="scripts/nav_scroll.js"></script>
+    <script src="scripts/dark_mode.js"></script>
 </body>
 
 </html>
