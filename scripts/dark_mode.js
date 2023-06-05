@@ -39,8 +39,8 @@ const footer_observer = new IntersectionObserver(function(
     content_observer
 ) {
     entries.forEach(entry => {
-        console.log(entry.target);
-        console.log(entry.isIntersecting);
+        // console.log(entry.target);
+        // console.log(entry.isIntersecting);
         if (entry.isIntersecting) {
             dark_mode_toggle.classList.add("footer_overlap");
         } else {
