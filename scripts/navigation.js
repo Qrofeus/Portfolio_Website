@@ -25,9 +25,9 @@ const nav_toggle = document.querySelector(".nav_toggle");
 
 nav_toggle.addEventListener("click", (e) => {
     let visible = nav.getAttribute("data-visible");
-    let icon = e.currentTarget.children[0]
-    console.log(icon);
-    console.log(icon.getAttribute("href");
+    let icon = e.currentTarget.children[0];
+    // console.log(icon);
+    // console.log(icon.getAttribute("href"));
 
     if (visible === "false") {
         nav.setAttribute("data-visible", true);
