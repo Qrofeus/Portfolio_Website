@@ -1,33 +1,24 @@
+// Navigation scroll shadow
 const header = document.querySelector("header");
-const content = document.querySelector(".nav_interact");
+const content = document.createElement("div");
 
-const content_observer = new IntersectionObserver(function(
-    entries,
-    content_observer
-) {
-    entries.forEach(entry => {
-        // console.log(entry.target);
-        // console.log(entry.isIntersecting);
-        if (!entry.isIntersecting) {
-            header.classList.add("nav_scrolled");
-        } else {
-            header.classList.remove("nav_scrolled");
-        }
-    });
+content.setAttribute("data-scroll-interact", "");
+header.before(content);
+
+const content_observer = new IntersectionObserver((entries) => {
+    header.classList.toggle("nav_scrolled", !entries[0].isIntersecting);
 });
 
 content_observer.observe(content);
 
-// ===================
-
+// =====================================================================
+// Mobile Hamburger Menu
 const nav = document.querySelector(".nav_bar");
 const nav_toggle = document.querySelector(".nav_toggle");
 
 nav_toggle.addEventListener("click", (e) => {
     let visible = nav.getAttribute("data-visible");
     let icon = e.currentTarget.children[0];
-    // console.log(icon);
-    // console.log(icon.getAttribute("href"));
 
     if (visible === "false") {
         nav.setAttribute("data-visible", true);
