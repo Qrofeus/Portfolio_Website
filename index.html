@@ -1,381 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/svg/logo_qrofeus.svg" />
     <title>Ninad Deshpande</title>
 
-    <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap" rel="stylesheet">
-
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <header>
-        <a href="https://qrofeus.github.io/portfolio/">
-            <svg class="logo"><use href="#logo"></use></svg>
-        </a>
-        <svg class="nav_toggle"><use href="#hamburger"></use></svg>
-        <nav>
-            <div class="nav_bar" data-visible="false">
-                <a href="./#about" class="nav_link">About</a>
-                <a href="./#projects" class="nav_link">Projects</a>
-                <a href="assets/docs/Resume.pdf" target="_blank" class="nav_link">Resume</a>
-                <a href="./#contact" class="btn">Contact Me</a>
-            </div>
-        </nav>
-
-    </header>
-
-    <div class="container">
-        <section class="introduction">
-            <div class="text">
-                Hi, I am
-                <span>Ninad Deshpande</span>
-                <span class="title">I am a Software Developer</span>
-                Currently working on some personal projects and online certifications.
-                <div class="links">
-                    <a href="./#contact" class="btn">Get In Touch</a>
-                    <a href="https://www.linkedin.com/in/qrofeus/" target="_blank">
-                        <svg class="icon">
-                            <use href="#linked_in"></use>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/Qrofeus" target="_blank">
-                        <svg class="icon">
-                            <use href="#github"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <img src="assets/img/img_illustration_02.png">
-        </section>
-
-        <section id="projects">
-            <span class="section_title">Projects</span>
-            <div class="project_card">
-                <img src="assets/img/demo.jpg" alt="" class="project_img">
-                <div class="project_desc">
-                    <div class="text">
-                        <span class="title">Project Title</span>
-                        <code class="techs">HTML, CSS, JavaScript</code>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                        doloremque eligendi earum!
-                    </div>
-                    <div class="project_links">
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#live"></use>
-                            </svg>
-                            Live
-                        </a>
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#code"></use>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project_card">
-                <img src="assets/img/demo.jpg" alt="" class="project_img">
-                <div class="project_desc">
-                    <div class="text">
-                        <span class="title">Project Title</span>
-                        <code class="techs">Python</code>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                        doloremque eligendi earum!
-                    </div>
-                    <div class="project_links">
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#live"></use>
-                            </svg>
-                            Live
-                        </a>
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#code"></use>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project_card">
-                <img src="assets/img/demo.jpg" alt="" class="project_img">
-                <div class="project_desc">
-                    <div class="text">
-                        <span class="title">Project Title</span>
-                        <code class="techs">HTML, CSS, JavaScript</code>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto tenetur numquam, totam, veritatis
-                        nesciunt explicabo vitae iure mollitia doloribus eum excepturi animi vero nisi blanditiis repellendus
-                        doloremque eligendi earum!
-                    </div>
-                    <div class="project_links">
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#live"></use>
-                            </svg>
-                            Live
-                        </a>
-                        <a href="" class="btn">
-                            <svg>
-                                <use href="#code"></use>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="other_projects">
-            <span class="section_title">Other Projects</span>
-            <div class="other_projects">
-                <div class="project_box">
-                    <div class="box_title">
-                        <span class="title">Sorting Algorithms - Animations</span>
-                        <a href="https://github.com/Qrofeus/sorting-algorithms" target="_blank">
-                            <svg>
-                                <use href="#open"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <code class="techs">Python, pygame</code>
-                    Compilation, explanation and python implementations for widely used sorting algorithms. Using the 'pygame' module, some of the sorting algorithms are animated for easier understanding, accessible from the repository README.
-                </div>
-                <div class="project_box">
-                    <div class="box_title">
-                        <span class="title">Project Title</span>
-                        <a href="http://" target="_blank">
-                            <svg>
-                                <use href="#open"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <code class="techs">HTML, CSS, JavaScript</code>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
-                </div>
-                <div class="project_box">
-                    <div class="box_title">
-                        <span class="title">Project Title</span>
-                        <a href="http://" target="_blank">
-                            <svg>
-                                <use href="#open"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <code class="techs">HTML, CSS, JavaScript</code>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi expedita mollitia omnis provident ex molestias nemo. Quo facere quidem necessitatibus voluptas enim sequi, expedita laboriosam, ex nemo rerum magnam.
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <span class="section_title">About Me</span>
-            <div class="about">
-                <img src="assets/img/profile-placeholder.jpg" alt="Ninad Deshpande">
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa quos impedit, quae nihil atque iste repudiandae quas praesentium vitae repellendus veniam sunt excepturi consequatur exercitationem ipsa! Adipisci, molestias fugiat.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi nisi laboriosam obcaecati distinctio voluptatem alias illo culpa vitae consequuntur.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <span class="section_title">Education</span>
-            <div class="education">
-                <span class="title">Indiana University, Purdue University, Indianpolis</span>
-                <code>Aug 2023 - Present</code>
-                <div class="text">
-                    <code>Indianpolis, US</code>
-                    Attending my MS course in Computer and Information Science.
-                </div>
-            </div>
-            <div class="education">
-                <span class="title">AISSMS' Institute of Information Technology</span>
-                <code>Aug 2018 - May 2022</code>
-                <div class="text">
-                    <code>Pune, India</code>
-                    Completed my BE course in Computer Engineering achieving grade First Class with Distinction with a C.G.P.A of <strong>9.25/10</strong>. Also completed a honors course in <strong>Data Science</strong> simultaneously.
-                </div>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <span class="section_title">Send me a message</span>
-            <div class="contact">
-                Fill out the contact form or mail me directly at <span><a href="mailto:ninad.deshpande46@gmail.com">ninad.deshpande46@gmail.com</a></span>
-                <form onsubmit="send_email(); reset(); return false;">
-                    <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required></input>
-                    <input type="email" id="form_mail" class="contact_field" placeholder="Email Address*" required></input>
-                    <textarea id="form_message" class="contact_field" rows="6" placeholder="Your Message*" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-        </section>
-
-        <button id="dark_mode_toggle" class="dark_mode_btn">
-            <svg><use href="#darkmode"></use>
-            </svg>
-        </button>
-    </div>
-
-    <footer>
-        <a class="btn socials_link" href="mailto:ninad.deshpande46@gmail.com" target="_blank">
-            <svg class="icon">
-                <use href="#gmail"></use>
-            </svg>
-            Gmail
-        </a>
-        <a class="btn socials_link" href="https://www.linkedin.com/in/qrofeus/" target="_blank">
-            <svg class="icon">
-                <use href="#linked_in"></use>
-            </svg>
-            Linked In
-        </a>
-        <a class="btn socials_link" href="https://github.com/Qrofeus" target="_blank">
-            <svg class="icon">
-                <use href="#github"></use>
-            </svg>
-            Github
-        </a>
-    </footer>
-
-    <!-- SVGs -->
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hide">
-        <symbol id="github" viewBox="0 0 24 24">
-            <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-        </symbol>
-        <symbol id="linked_in" viewBox="0 0 24 24">
-            <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </symbol>
-        <symbol id="gmail" viewBox="0 0 24 24">
-            <path
-                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-        </symbol>
-        <symbol id="logo" viewBox="0 0 350 350" enable-background="new 0 0 350 350">
-            <path opacity="1.000000" stroke="none" d="
-            M5.216879,182.744934 
-                C2.847384,136.517731 19.722443,98.595955 52.142933,65.951714 
-                C61.200195,78.000092 69.762749,89.390388 78.443733,100.938225 
-                C85.231056,95.866615 91.805664,90.953949 98.961090,85.607292 
-                C90.176155,74.243996 81.464363,62.975285 71.896255,50.598946 
-                C81.504753,46.351067 90.247765,41.381138 99.633675,38.520947 
-                C149.473862,23.333015 196.469757,28.702435 238.114502,61.486450 
-                C269.555054,86.237419 287.100067,119.295815 290.966888,159.374863 
-                C293.066925,181.141785 290.231445,202.251083 282.698975,222.709244 
-                C281.434509,226.143509 282.511261,228.330902 284.414612,230.842926 
-                C304.537933,257.401581 324.612823,283.996887 344.693176,310.588074 
-                C345.877594,312.156494 346.994385,313.775940 348.798889,316.283630 
-                C346.337891,316.420929 344.804291,316.579834 343.270538,316.581024 
-                C322.272766,316.597504 301.274506,316.522614 280.277649,316.660553 
-                C276.761658,316.683655 274.415955,315.607819 272.287628,312.784607 
-                C255.941193,291.100891 239.467697,269.512939 223.022186,247.904007 
-                C221.939484,246.481369 220.762497,245.130478 219.603790,243.714996 
-                C212.460205,249.234238 205.661804,254.486786 198.281372,260.189026 
-                C206.898819,271.612244 215.550888,283.081329 224.476013,294.912384 
-                C210.279572,303.307892 195.817200,309.558319 180.269257,312.835602 
-                C110.463997,327.549438 45.505329,294.388367 16.330057,229.157867 
-                C9.813945,214.589050 6.478437,199.124466 5.216879,182.744934 
-            M244.185226,243.306473 
-                C256.640259,259.784607 269.080658,276.273865 281.574158,292.722778 
-                C282.755249,294.277802 284.212524,296.736084 285.639404,296.807007 
-                C293.644165,297.204834 301.678986,296.998657 310.584442,296.998657 
-                C309.043518,294.723236 308.191193,293.335510 307.214478,292.041687 
-                C292.360321,272.364838 277.556763,252.648972 262.550995,233.088257 
-                C260.305725,230.161453 260.132446,227.863892 261.516724,224.532562 
-                C270.071960,203.944183 274.629639,182.661484 272.103973,160.206528 
-                C268.353851,126.865074 253.805450,98.922234 228.264450,77.519302 
-                C197.981964,52.143074 162.617493,44.043636 123.867332,51.181404 
-                C116.614128,52.517441 109.610901,55.210674 101.641167,57.524723 
-                C106.431160,63.791664 110.669685,68.886597 114.368057,74.347366 
-                C116.533455,77.544647 118.643486,78.075722 122.248337,77.020752 
-                C136.365891,72.889236 150.777222,71.982002 165.261230,74.646339 
-                C235.011520,87.476974 269.385742,162.139114 233.904373,223.801971 
-                C232.350174,226.502991 232.630447,228.143845 234.439636,230.363922 
-                C237.699387,234.364059 240.682098,238.589966 244.185226,243.306473 
-            M147.510483,297.066742 
-                C163.923035,297.190216 179.800034,294.614380 195.692352,287.932312 
-                C191.314301,282.240387 187.059479,277.334106 183.554825,271.940399 
-                C181.067429,268.112244 178.617172,267.792145 174.469223,268.968475 
-                C133.960709,280.456635 89.544518,264.713135 66.446800,229.474243 
-                C42.916031,193.574677 42.027767,156.537384 64.327576,119.386818 
-                C65.032066,118.213165 66.021881,116.164581 65.535583,115.485054 
-                C60.946468,109.072495 56.065212,102.869019 50.786453,95.976196 
-                C47.662830,100.594170 44.861248,104.299637 42.514111,108.273521 
-                C18.858238,148.324768 16.795336,189.878647 38.414886,230.708984 
-                C60.990726,273.345337 97.962318,295.333649 147.510483,297.066742 
-            M91.998062,230.503662 
-                C116.284920,254.593552 150.876801,257.534515 167.103378,250.132233 
-                C137.719574,211.224579 108.382080,172.378235 78.631714,132.985214 
-                C77.517082,134.771698 76.761299,135.798309 76.194130,136.920273 
-                C69.574356,150.015213 67.141678,163.970108 67.889381,178.522964 
-                C68.930748,198.791412 77.722412,215.545563 91.998062,230.503662 
-            M211.633789,122.901436 
-                C188.944199,91.999138 147.578888,87.933990 131.075455,95.195366 
-                C160.425735,133.411011 189.743668,171.584518 219.255890,210.011017 
-                C232.642990,188.437683 233.967896,152.628891 211.633789,122.901436 
-            M107.669212,139.824448 
-                C111.788094,145.264694 115.917465,150.697037 120.024109,156.146515 
-                C141.260376,184.326813 162.526520,212.484802 183.664505,240.738663 
-                C185.638321,243.376923 187.222321,244.364349 190.020218,242.125046 
-                C194.812042,238.289917 199.620575,234.469009 204.551575,230.816956 
-                C207.536667,228.606094 207.458313,226.679199 205.222610,223.841553 
-                C197.601044,214.167862 190.222855,204.302750 182.725616,194.530762 
-                C159.829178,164.687164 136.888214,134.877609 114.072212,104.972679 
-                C112.037926,102.306328 110.255356,101.589569 107.539299,103.619156 
-                C102.765564,107.186356 97.977272,110.734138 93.186317,114.278221 
-                C90.739716,116.088066 91.033371,117.870300 92.794380,120.126534 
-                C97.708763,126.422951 102.439369,132.862808 107.669212,139.824448 
-            z" />
-        </symbol>
-        <symbol id="live" viewBox="0 0 16 16">
-            <path fill="currentColor" fill-rule="evenodd"
-                d="M3 2.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5ZM1 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3Zm9.534 4.172a1 1 0 0 1 0 1.656L7.56 10.841A1 1 0 0 1 6 10.012V5.988a1 1 0 0 1 1.56-.829l2.974 2.013Z"
-                clip-rule="evenodd" />
-        </symbol>
-        <symbol id="code" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M19.775 22.625L7 9.85l-2.175 2.175L9.4 16.6L8 18l-6-6l3.575-3.575l-4.2-4.2L2.8 2.8l18.4 18.4l-1.425 1.425Zm-1.35-7.05L17 14.15l2.175-2.175L14.6 7.4L16 6l6 6l-3.575 3.575Z" />
-        </symbol>
-        <symbol id="open" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h6q.425 0 .713.288T12 4q0 .425-.288.713T11 5H5v14h14v-6q0-.425.288-.713T20 12q.425 0 .713.288T21 13v6q0 .825-.588 1.413T19 21H5Zm4-6q-.275-.275-.275-.7T9 13.6L17.6 5H15q-.425 0-.713-.288T14 4q0-.425.288-.713T15 3h5q.425 0 .713.288T21 4v5q0 .425-.288.713T20 10q-.425 0-.713-.288T19 9V6.4l-8.625 8.625q-.275.275-.675.275T9 15Z"/>
-        </symbol>
-        <symbol id="darkmode" viewBox="0 0 48 48">
-            <g fill="none">
-                <path stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M24.02 35.353c6.076 0 11-4.924 11-11c0-6.075-4.924-11-11-11c-6.075 0-11 4.925-11 11c0 6.076 4.925 11 11 11Z"/>
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="m38.96 9.01l-2.46 2.474M11.067 36.745l-2.046 2.059M24 41.353v3m20-20.999h-4m-2.468 12.982L40 38.804"/>
-                <path fill="currentColor" fill-rule="evenodd" d="M24.02 17.354a7 7 0 1 0 0 14" clip-rule="evenodd"/>
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M4 24.354h4M10.044 9.01l2.053 2.053M24 3.354v4"/>
-            </g>
-        </symbol>
-        <symbol id="close" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
-        </symbol>
-        <symbol id="hamburger" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/>
-        </symbol>
-    </svg>
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Scripts -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="scripts/contact_form.js"></script>
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/dark_mode.js"></script>
-</body>
+    <script src="" defer></script>
+  </head>
 
+  <body>
+    <header>
+      <a href="#"><svg><use href="#logo"></use></svg></a>
+      <!-- <svg id="menu_icon">
+        <use href="#hamburger"></use>
+      </svg> -->
+      <nav class="navigation">
+        <ul>
+          <li class="navigation_link"><a href="./#highlights">Projects</a></li>
+          <li class="navigation_link">
+            <a href="https://resume.qrofeus.dev" target="_blank">Resume</a>
+          </li>
+          <li class="navigation_link"><a href="./#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="introduction" class="introduction">
+      <p class="intro_text">Hi, I am</p>
+      <span class="intro_name">Ninad Deshpande</span>
+      <p class="intro_text">
+        I am a software developer improving my understanding of the programming
+        world one project at a time. All my projects are built from ground up,
+        including this portfolio.
+      </p>
+      <p class="intro_text">
+        Source code for all my projects can be found on my Github profile.
+      </p>
+      <a href="https://github.com/Qrofeus" class="btn" target="_blank">
+        <svg>
+          <use href="#github"></use>
+        </svg>
+        Github
+      </a>
+    </section>
+
+    <section id="highlights" class="highlights">
+      <div class="highlight">
+        <img src="assets/img/img_enigma_machine.jpg" alt="Project Image" />
+        <div class="project_description">
+          <span class="project_title">Enigma Machine Simulation: Console</span>
+          <p class="technologies">Python</p>
+          <p class="description">
+            A console based simulation of the widely known Enigma Machine,
+            allowing you to encrypt and decrypt messages using methods similar
+            to the ones used in war times.
+          </p>
+          <!-- <a href="https://" target="_blank">Live Demo</a> -->
+          <a href="https://github.com/Qrofeus/Enigma-Machine" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+            Code
+          </a>
+        </div>
+      </div>
+      <div class="highlight" data-status="in-progress">
+        <img src="assets/img/img_recipe_roulette.jpg" alt="Project Image" />
+        <div class="project_description">
+          <span class="project_title">Recipe Roulette - Web Application</span>
+          <p class="technologies">HTML, CSS, JavaScript, SQL, AWS</p>
+          <p class="description">
+            A web application that suggests you a random recipe to cook
+            everyday, from your previously selected list. Customise your list by
+            selecting one from database or add your own.
+          </p>
+          <a href="https://" target="_blank">Live Demo</a>
+          <a href="https://github.com/Qrofeus/recipe-roulette" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+            Code
+          </a>
+        </div>
+      </div>
+      <div class="highlight" data-status="in-progress">
+        <img
+          src="assets/img/img_interesting_articles.jpg"
+          alt="Project Image"
+        />
+        <div class="project_description">
+          <span class="project_title"
+            >Interesting Articles - Email Subscription</span
+          >
+          <p class="technologies">Unkown</p>
+          <p class="description">
+            An email subscription that gives you a selection of articles from
+            your selected websites. Select your frequency to match your needs.
+          </p>
+          <a href="https://" target="_blank">Live Demo</a>
+          <a href="https://github.com/Qrofeus/interesting-articles" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+            Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="other_projects">
+      <span class="section_title">Other Projects</span>
+      <div class="other_projects">
+        <div class="project_description">
+          <div class="title_card">
+            <span class="project_title"></span>
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </div>
+          <p class="technologies"></p>
+          <p class="description"></p>
+        </div>
+        <div class="project_description">
+          <div class="title_card">
+            <span class="project_title"></span>
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </div>
+          <p class="technologies"></p>
+          <p class="description"></p>
+        </div>
+        <div class="project_description">
+          <div class="title_card">
+            <span class="project_title"></span>
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </div>
+          <p class="technologies"></p>
+          <p class="description"></p>
+        </div>
+        <div class="project_description">
+          <div class="title_card">
+            <span class="project_title"></span>
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </div>
+          <p class="technologies"></p>
+          <p class="description"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <span class="section_title">Send me a message</span>
+      <div class="contact">
+        Fill out the contact form or mail me directly at
+        <span><a href="mailto:hello@qrofeus.dev">hello@qrofeus.dev</a></span>
+        <form onsubmit="send_email(); reset(); return false;">
+          <input
+            type="text"
+            id="form_name"
+            class="contact_field"
+            placeholder="Your Name*"
+            required=""
+          />
+          <input
+            type="email"
+            id="form_mail"
+            class="contact_field"
+            placeholder="Email Address*"
+            required=""
+          />
+          <textarea
+            id="form_message"
+            class="contact_field"
+            rows="6"
+            placeholder="Your Message*"
+            required=""
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <a
+        class="btn socials_link"
+        href="mailto:hello@qrofeus.dev"
+        target="_blank"
+      >
+        <svg class="icon">
+          <use href="#gmail"></use>
+        </svg>
+        Gmail
+      </a>
+      <a
+        class="btn socials_link"
+        href="linkedin.com/in/qrofeus/"
+        target="_blank"
+      >
+        <svg class="icon">
+          <use href="#linked_in"></use>
+        </svg>
+        Linked In
+      </a>
+      <a class="btn socials_link" href="github.com/Qrofeus" target="_blank">
+        <svg class="icon">
+          <use href="#github"></use>
+        </svg>
+        Github
+      </a>
+    </footer>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <symbol id="github" viewBox="0 0 24 24">
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        ></path>
+      </symbol>
+      <symbol id="linked_in" viewBox="0 0 24 24">
+        <path
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        ></path>
+      </symbol>
+      <symbol id="gmail" viewBox="0 0 24 24">
+        <path
+          d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+        ></path>
+      </symbol>
+      <symbol id="open" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h6q.425 0 .713.288T12 4q0 .425-.288.713T11 5H5v14h14v-6q0-.425.288-.713T20 12q.425 0 .713.288T21 13v6q0 .825-.588 1.413T19 21H5Zm4-6q-.275-.275-.275-.7T9 13.6L17.6 5H15q-.425 0-.713-.288T14 4q0-.425.288-.713T15 3h5q.425 0 .713.288T21 4v5q0 .425-.288.713T20 10q-.425 0-.713-.288T19 9V6.4l-8.625 8.625q-.275.275-.675.275T9 15Z"
+        ></path>
+      </symbol>
+      <symbol id="close" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+        ></path>
+      </symbol>
+      <symbol id="hamburger" viewBox="0 0 24 24">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 17h14M5 12h14M5 7h14"
+        ></path>
+      </symbol>
+      <symbol id="logo" viewBox="0 0 350 350">
+        <path
+          opacity="1.000000"
+          stroke="none"
+          fill="currentColor"
+          d="M5.216879,182.744934 
+              C2.847384,136.517731 19.722443,98.595955 52.142933,65.951714 
+              C61.200195,78.000092 69.762749,89.390388 78.443733,100.938225 
+              C85.231056,95.866615 91.805664,90.953949 98.961090,85.607292 
+              C90.176155,74.243996 81.464363,62.975285 71.896255,50.598946 
+              C81.504753,46.351067 90.247765,41.381138 99.633675,38.520947 
+              C149.473862,23.333015 196.469757,28.702435 238.114502,61.486450 
+              C269.555054,86.237419 287.100067,119.295815 290.966888,159.374863 
+              C293.066925,181.141785 290.231445,202.251083 282.698975,222.709244 
+              C281.434509,226.143509 282.511261,228.330902 284.414612,230.842926 
+              C304.537933,257.401581 324.612823,283.996887 344.693176,310.588074 
+              C345.877594,312.156494 346.994385,313.775940 348.798889,316.283630 
+              C346.337891,316.420929 344.804291,316.579834 343.270538,316.581024 
+              C322.272766,316.597504 301.274506,316.522614 280.277649,316.660553 
+              C276.761658,316.683655 274.415955,315.607819 272.287628,312.784607 
+              C255.941193,291.100891 239.467697,269.512939 223.022186,247.904007 
+              C221.939484,246.481369 220.762497,245.130478 219.603790,243.714996 
+              C212.460205,249.234238 205.661804,254.486786 198.281372,260.189026 
+              C206.898819,271.612244 215.550888,283.081329 224.476013,294.912384 
+              C210.279572,303.307892 195.817200,309.558319 180.269257,312.835602 
+              C110.463997,327.549438 45.505329,294.388367 16.330057,229.157867 
+              C9.813945,214.589050 6.478437,199.124466 5.216879,182.744934 
+            M244.185226,243.306473 
+              C256.640259,259.784607 269.080658,276.273865 281.574158,292.722778 
+              C282.755249,294.277802 284.212524,296.736084 285.639404,296.807007 
+              C293.644165,297.204834 301.678986,296.998657 310.584442,296.998657 
+              C309.043518,294.723236 308.191193,293.335510 307.214478,292.041687 
+              C292.360321,272.364838 277.556763,252.648972 262.550995,233.088257 
+              C260.305725,230.161453 260.132446,227.863892 261.516724,224.532562 
+              C270.071960,203.944183 274.629639,182.661484 272.103973,160.206528 
+              C268.353851,126.865074 253.805450,98.922234 228.264450,77.519302 
+              C197.981964,52.143074 162.617493,44.043636 123.867332,51.181404 
+              C116.614128,52.517441 109.610901,55.210674 101.641167,57.524723 
+              C106.431160,63.791664 110.669685,68.886597 114.368057,74.347366 
+              C116.533455,77.544647 118.643486,78.075722 122.248337,77.020752 
+              C136.365891,72.889236 150.777222,71.982002 165.261230,74.646339 
+              C235.011520,87.476974 269.385742,162.139114 233.904373,223.801971 
+              C232.350174,226.502991 232.630447,228.143845 234.439636,230.363922 
+              C237.699387,234.364059 240.682098,238.589966 244.185226,243.306473 
+            M147.510483,297.066742 
+              C163.923035,297.190216 179.800034,294.614380 195.692352,287.932312 
+              C191.314301,282.240387 187.059479,277.334106 183.554825,271.940399 
+              C181.067429,268.112244 178.617172,267.792145 174.469223,268.968475 
+              C133.960709,280.456635 89.544518,264.713135 66.446800,229.474243 
+              C42.916031,193.574677 42.027767,156.537384 64.327576,119.386818 
+              C65.032066,118.213165 66.021881,116.164581 65.535583,115.485054 
+              C60.946468,109.072495 56.065212,102.869019 50.786453,95.976196 
+              C47.662830,100.594170 44.861248,104.299637 42.514111,108.273521 
+              C18.858238,148.324768 16.795336,189.878647 38.414886,230.708984 
+              C60.990726,273.345337 97.962318,295.333649 147.510483,297.066742 
+            M91.998062,230.503662 
+              C116.284920,254.593552 150.876801,257.534515 167.103378,250.132233 
+              C137.719574,211.224579 108.382080,172.378235 78.631714,132.985214 
+              C77.517082,134.771698 76.761299,135.798309 76.194130,136.920273 
+              C69.574356,150.015213 67.141678,163.970108 67.889381,178.522964 
+              C68.930748,198.791412 77.722412,215.545563 91.998062,230.503662 
+            M211.633789,122.901436 
+              C188.944199,91.999138 147.578888,87.933990 131.075455,95.195366 
+              C160.425735,133.411011 189.743668,171.584518 219.255890,210.011017 
+              C232.642990,188.437683 233.967896,152.628891 211.633789,122.901436 
+            M107.669212,139.824448 
+              C111.788094,145.264694 115.917465,150.697037 120.024109,156.146515 
+              C141.260376,184.326813 162.526520,212.484802 183.664505,240.738663 
+              C185.638321,243.376923 187.222321,244.364349 190.020218,242.125046 
+              C194.812042,238.289917 199.620575,234.469009 204.551575,230.816956 
+              C207.536667,228.606094 207.458313,226.679199 205.222610,223.841553 
+              C197.601044,214.167862 190.222855,204.302750 182.725616,194.530762 
+              C159.829178,164.687164 136.888214,134.877609 114.072212,104.972679 
+              C112.037926,102.306328 110.255356,101.589569 107.539299,103.619156 
+              C102.765564,107.186356 97.977272,110.734138 93.186317,114.278221 
+              C90.739716,116.088066 91.033371,117.870300 92.794380,120.126534 
+              C97.708763,126.422951 102.439369,132.862808 107.669212,139.824448 
+            z"
+        />
+      </symbol>
+    </svg>
+  </body>
 </html>
