@@ -21,25 +21,31 @@ html {
 
 :root[data-theme="light"] {
   --text: hsl(279, 68%, 0%);
-  --text-20: hsl(279, 68%, 20%);
+  --text-100: hsl(279, 68%, 10%);
 
   --background: hsl(270, 60%, 100%);
-  --background-20: hsl(270, 61%, 80%);
+  --background-100: hsl(270, 60%, 90%);
+  --card-background: hsl(0, 0%, 90%);
 
   --primary: hsl(284, 66%, 55%);
   --secondary: hsl(91, 98%, 52%);
   --accent: hsl(281, 35%, 43%);
+
+  --hover: var(--text);
 }
 :root[data-theme="dark"] {
   --text: hsl(279, 68%, 100%);
-  --text-20: hsl(279, 68%, 80%);
+  --text-100: hsl(279, 68%, 90%);
 
   --background: hsl(270, 60%, 0%);
-  --background-20: hsl(270, 60%, 20%);
+  --background-100: hsl(270, 60%, 10%);
+  --card-background: hsl(0, 0%, 10%);
 
   --primary: hsl(284, 66%, 45%);
   --secondary: hsl(94, 66%, 29%);
   --accent: hsl(281, 35%, 57%);
+
+  --hover: var(--accent);
 }
 
 body {
@@ -78,18 +84,10 @@ svg {
   fill: var(--text);
   transition: all var(--transition);
 
-  &:hover, &:focus {
-    fill: var(--secondary);
+  &:hover,
+  &:focus {
+    fill: var(--primary);
   }
-}
-
-img {
-  align-self: center;
-  max-width: 100%;
-
-  font-style: italic;
-
-  background-size: contain;
 }
 
 /* Navigation */
@@ -103,7 +101,7 @@ header {
 
 .nav_scrolled {
   background: var(--background);
-  box-shadow: 0px 0px 20px -10px var(--text-20);
+  box-shadow: 0px 0px 20px -10px var(--text);
 }
 
 nav {
@@ -129,10 +127,8 @@ nav {
   font-weight: 600;
   padding: 0.5em;
 
-  opacity: 0.8;
   &:hover,
   &:focus {
-    opacity: 1;
     color: var(--primary);
   }
 }
@@ -163,7 +159,7 @@ nav {
 
 .btn {
   --button-color: var(--background);
-  
+
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -173,19 +169,20 @@ nav {
   width: fit-content;
 
   border-radius: 5px;
-  color: #FFF;
+  color: #fff;
 
   background-color: var(--secondary);
   transition: all var(--transition);
 
   & svg {
-    fill: #FFF;
+    fill: #fff;
     width: 1.5em;
     height: 1.5em;
   }
 
-  &:hover, &:focus {
-    background: var(--accent);
+  &:hover,
+  &:focus {
+    background: var(--hover);
   }
 }
 
@@ -196,10 +193,11 @@ nav {
 }
 
 section {
-  scroll-margin-top: 4em;
+  scroll-margin-top: 5em;
 }
 
 .introduction {
+  margin-inline: 1em;
   min-height: 75svh;
   width: 75%;
 
@@ -211,6 +209,7 @@ section {
   gap: 0.5em;
 
   & .intro_name {
+    display: block;
     color: var(--primary);
     font-weight: 600;
     font-size: 3em;
@@ -223,17 +222,23 @@ section {
     display: flex;
     gap: 1em;
   }
-
-  & svg:hover,
-  & svg:focus {
-    fill: var(--secondary);
-  }
 }
 
 /* Project Highlights */
-div [data-status="in-progress"] {
+.disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+  height: 100%;
+
+  font-style: italic;
+  object-fit: cover;
+
+  border-radius: 5px;
 }
 
 .highlight {
@@ -241,15 +246,67 @@ div [data-status="in-progress"] {
   grid-template-columns: 1fr 1fr;
 
   gap: 1em;
+  padding: 0.5em;
+
+  border-radius: 5px;
+  background: var(--card-background);
+
+  margin-block: 0.5em;
+  width: 100%;
+  height: min-content;
+
+  &:nth-child(even) {
+    & .project_description {
+      order: -1;
+    }
+  }
 }
 
-@media (width < 550px) {
+@media (width < 700px) {
   .highlight {
     grid-template-columns: 1fr;
+    &:nth-child(even) {
+      & .project_description {
+        order: 0;
+      }
+    }
+  }
+}
+
+.project_description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  & .buttons {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  & .btn {
+    margin: 0;
+  }
+}
+
+.project_title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.technologies {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+
+  & > li {
+    padding: 0em 0.5em;
+    border: 1px solid var(--text-100);
+    border-radius: 5px;
   }
 }
 
 /* Contact Form */
+
 .alert {
   position: fixed;
   bottom: 2rem;
@@ -278,6 +335,26 @@ div [data-status="in-progress"] {
   &#failure {
     color: #d8000c;
     background-color: #ffbaba;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  gap: 0.5em;
+
+  background: var(--card-background);
+  justify-content: center;
+}
+
+@media (width < 700px) {
+  footer {
+    flex-direction: column;
+    padding: 1em;
+
+    & .btn {
+      margin: 0;
+    }
   }
 }
 
