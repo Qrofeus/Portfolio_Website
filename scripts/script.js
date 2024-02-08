@@ -41,8 +41,8 @@ async function send_email() {
   processing_alert.classList.remove("hidden");
   Email.send({
     SecureToken: "ce95cf86-bed2-4107-a466-cbdf6cc2a71a",
-    To: "qrofeus@gmail.com",
-    From: "hello@qrofeus.dev",
+    To: "hello@qrofeus.dev",
+    From: "info@qrofeus.dev",
     Subject: "New contact form enquiry",
     Body:
       "Name: " +
@@ -81,3 +81,20 @@ const content_observer = new IntersectionObserver((entries) => {
 });
 
 content_observer.observe(content);
+
+// Mobile Hamburger Menu
+const nav = document.querySelector("#nav_links");
+const nav_toggle = document.querySelector("#menu_icon");
+
+nav_toggle.addEventListener("click", (e) => {
+    let visible = nav.getAttribute("data-visible");
+    let icon = e.currentTarget.children[0];
+
+    if (visible === "false") {
+        nav.setAttribute("data-visible", "true");
+        icon.setAttribute("href", "#close");
+    } else {
+        nav.setAttribute("data-visible", "false");
+        icon.setAttribute("href", "#hamburger");
+    }
+})
