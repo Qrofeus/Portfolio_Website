@@ -308,6 +308,11 @@ img {
   border-radius: 5px;
 }
 
+.highlights {
+  max-width: min(100ch, 90%);
+  margin-inline: auto;
+}
+
 .highlight {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -315,12 +320,9 @@ img {
   gap: 1em;
   padding: 1em 0.5em;
 
-  border-radius: 5px;
-  background: var(--card-background);
-
-  margin-block: 2em;
   width: 100%;
   height: min-content;
+  margin-block-end: 5em;
 
   &:nth-child(even) {
     .project_description {
