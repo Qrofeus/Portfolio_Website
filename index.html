@@ -14,6 +14,7 @@
 
   <!-- Scripts -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -36,34 +37,33 @@
       </svg>
     </nav>
   </header>
-  <section>
-    <div class="wrapper introduction">
-      <span class="intro_name">Ninad Deshpande</span>
-      <p>
-        I am a software developer improving my understanding of the
-        programming world one project at a time. All my projects are built
-        from ground up, including this webpage.
-      </p>
-      <p>
-        Source code for all my projects can be found on my Github profile.
-      </p>
-      <div class="intro_links">
-        <a href="https://github.com/Qrofeus" target="_blank">
-          <svg>
-            <use href="#github"></use>
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/qrofeus" target="_blank">
-          <svg>
-            <use href="#linked_in"></use>
-          </svg>
-        </a>
-      </div>
+  <section class="wrapper introduction">
+    <p>Hi, I am</p>
+    <span class="intro_name">Ninad Deshpande</span>
+    <p>
+      I am a software developer improving my understanding of the
+      programming world one project at a time. All my projects are built
+      from ground up, including this webpage.
+    </p>
+    <p>
+      Source code for all my projects can be found on my Github profile.
+    </p>
+    <div class="intro_links">
+      <a href="https://github.com/Qrofeus" target="_blank">
+        <svg>
+          <use href="#github"></use>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/qrofeus" target="_blank">
+        <svg>
+          <use href="#linked_in"></use>
+        </svg>
+      </a>
     </div>
   </section>
 
   <section id="highlights">
-    <div class="wrapper highlights">
+    <div class="highlights">
       <div class="highlight">
         <img src="assets/img/img_enigma_machine.jpg" alt="Project Image" />
         <div class="project_description">
@@ -154,105 +154,103 @@
     </div>
   </section>
 
-  <section id="other_projects">
-    <div class="wrapper">
-      <span class="section_title">Other Projects</span>
-      <div class="other_projects">
-        <div class="project project_description">
-          <div class="title_card">
-            <span class="project_title">Sorting Algorithms - Visualization</span>
-            <a href="https://github.com/Qrofeus/sorting-algorithms" target="_blank"><svg>
-                <use href="#open"></use>
-              </svg>
-            </a>
-          </div>
-          <ul class="technologies">
-            <li>Python</li>
-            <li>PyGame</li>
-          </ul>
-          <p class="description">Python implementations for widely known sorting algorithms. Complete with explanation
-            and
-            vizualization that help in understanding each of the sorting algorithms.</p>
-        </div>
-        <div class="project project_description disabled">
-          <div class="title_card">
-            <span class="project_title">Path Finding Algorithms - Visualization</span>
-            <a href="http://https://github.com/Qrofeus/path-finding-algorithms" target="_blank">
-              <svg>
-                <use href="#open"></use>
-              </svg>
-            </a>
-          </div>
-          <ul class="technologies">
-            <li>Python</li>
-            <li>PyGame</li>
-          </ul>
-          <p class="description">Different path-finding algorithms explained and implemented in Python. Custom
-            visualizations help in understanding all the path-finding algorithms.</p>
-        </div>
-        <div class="project project_description">
-          <div class="title_card">
-            <span class="project_title">Wrestling Tournament Simulation</span>
-            <a href="https://github.com/Qrofeus/wrestling_tournament_sim" target="_blank">
-              <svg>
-                <use href="#open"></use>
-              </svg>
-            </a>
-          </div>
-          <ul class="technologies">
-            <li>Python</li>
-          </ul>
-          <p class="description">A tournament simulation loosely based on a project shared by Forrest Knight. This
-            project
-            uses normal distribution to generate new wrestlers and custom scheduling to carry-out the tournament
-            matches.
-          </p>
-        </div>
-        <div class="project project_description disabled">
-          <div class="title_card">
-            <span class="project_title">Online Quiz - Web Application</span>
-            <a href="http://https://github.com/Qrofeus/online-quiz" target="_blank">
-              <svg>
-                <use href="#open"></use>
-              </svg>
-            </a>
-          </div>
-          <ul class="technologies">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>OpenTDB API</li>
-          </ul>
-          <p class="description">A multiple choice quiz of 20 questions, with questions generated using the <a
-              href="http://https://opentdb.com/" target="_blank" rel="noopener noreferrer">OpenTDB</a> API. Click on the
-            demo button below to play.</p>
-          <a href="http://" target="_blank" class="btn">
-            <svg>
-              <use href="#demo"></use>
+  <section id="other_projects" class="wrapper">
+    <span class="section_title">Other Projects</span>
+    <div class="other_projects">
+      <div class="project project_description">
+        <div class="title_card">
+          <span class="project_title">Sorting Algorithms - Visualization</span>
+          <a href="https://github.com/Qrofeus/sorting-algorithms" target="_blank"><svg>
+              <use href="#open"></use>
             </svg>
-            Demo
           </a>
         </div>
+        <ul class="technologies">
+          <li>Python</li>
+          <li>PyGame</li>
+        </ul>
+        <p class="description">Python implementations for widely known sorting algorithms. Complete with explanation
+          and
+          vizualization that help in understanding each of the sorting algorithms.</p>
+      </div>
+      <div class="project project_description disabled">
+        <div class="title_card">
+          <span class="project_title">Path Finding Algorithms - Visualization</span>
+          <a href="http://https://github.com/Qrofeus/path-finding-algorithms" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="technologies">
+          <li>Python</li>
+          <li>PyGame</li>
+        </ul>
+        <p class="description">Different path-finding algorithms explained and implemented in Python. Custom
+          visualizations help in understanding all the path-finding algorithms.</p>
+      </div>
+      <div class="project project_description">
+        <div class="title_card">
+          <span class="project_title">Wrestling Tournament Simulation</span>
+          <a href="https://github.com/Qrofeus/wrestling_tournament_sim" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="technologies">
+          <li>Python</li>
+        </ul>
+        <p class="description">A tournament simulation loosely based on a project shared by Forrest Knight. This
+          project
+          uses normal distribution to generate new wrestlers and custom scheduling to carry-out the tournament
+          matches.
+        </p>
+      </div>
+      <div class="project project_description">
+        <div class="title_card">
+          <span class="project_title">Online Quiz - Web Application</span>
+          <a href="http://https://github.com/Qrofeus/online-quiz" target="_blank">
+            <svg>
+              <use href="#open"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="technologies">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>OpenTDB API</li>
+        </ul>
+        <p class="description">A multiple choice quiz of 20 questions, with questions generated using the <a
+            href="http://https://opentdb.com/" target="_blank" rel="noopener noreferrer">OpenTDB</a> API. Click on the
+          demo button below to play.</p>
+        <a href="http://quiz.qrofeus.dev" target="_blank" class="btn">
+          <svg>
+            <use href="#demo"></use>
+          </svg>
+          Demo
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="wrapper">
-      <span class="section_title">Send me a message</span>
-      <div class="contact">
-        Fill out the contact form or send me an email me directly at
-        <span><a href="mailto:hello@qrofeus.dev">hello@qrofeus.dev</a></span>
-        I will get back to you as soon as possible.
-        <form id="contact_form" onsubmit="send_email(); reset(); return false;">
-          <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required="" />
-          <input type="email" id="form_mail" class="contact_field" placeholder="Your Email address*" required="" />
-          <textarea id="form_message" class="contact_field" rows="6" placeholder="Message*" required=""></textarea>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
+  <section id="contact" class="wrapper">
+    <span class="section_title">Send me a message</span>
+    <div class="contact">
+      Fill out the contact form or send me an email directly at
+      <span><a href="mailto:hello@qrofeus.dev">hello@qrofeus.dev</a></span>
+      <br>
+      I will get back to you as soon as possible.
+      <form id="contact_form" onsubmit="send_email(); reset(); return false;">
+        <input type="text" id="form_name" class="contact_field" placeholder="Your Name*" required="" />
+        <input type="email" id="form_mail" class="contact_field" placeholder="Your Email address*" required="" />
+        <textarea id="form_message" class="contact_field" rows="6" placeholder="Message*" required=""></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
     </div>
   </section>
+  
   <div class="alert hidden" id="processing">Sending contact request</div>
   <div class="alert hidden" id="success">Success</div>
   <div class="alert hidden" id="failure">Failure</div>
@@ -268,7 +266,7 @@
       <svg>
         <use href="#linked_in"></use>
       </svg>
-      Linked In
+      LinkedIn
     </a>
     <a class="btn" href="https://github.com/Qrofeus" target="_blank">
       <svg>
@@ -403,9 +401,6 @@
       </g>
     </symbol>
   </svg>
-
-  <!-- Scripts -->
-  <script src="scripts/script.js"></script>
 </body>
 
 </html>

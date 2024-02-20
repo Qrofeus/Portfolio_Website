@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,42 +13,33 @@ html {
 
 /* CSS Variables */
 :root[data-theme="light"] {
-  --text: hsl(279, 68%, 0%);
+  --text: hsl(0, 0%, 0%);
+  --text-300: hsl(0, 0%, 30%);
 
-  --background: hsl(270, 60%, 100%);
+  --background: hsl(0, 0%, 100%);
   --card-background: hsl(0, 0%, 90%);
   --textarea: hsl(0, 0%, 95%);
 
   --primary: hsl(284, 66%, 55%);
-  --primary-light: hsl(284, 20%, 55%);
-
-  --secondary: hsl(91, 98%, 52%);
-  --secondary-light: hsl(91, 68%, 52%);
-
-  --accent: hsl(281, 35%, 43%);
+  --accent: hsl(227, 53%, 49%);
 }
 
 :root[data-theme="dark"] {
-  --text: hsl(279, 68%, 100%);
+  --text: hsl(0, 0%, 100%);
+  --text-300: hsl(0, 0%, 70%);
 
-  --background: hsl(270, 60%, 0%);
+  --background: hsl(0, 0%, 0%);
   --card-background: hsl(0, 0%, 10%);
   --textarea: hsl(0, 0%, 15%);
 
   --primary: hsl(284, 66%, 45%);
-  --primary-light: hsl(284, 20%, 45%);
-
-  --secondary: hsl(94, 78%, 29%);
-  --secondary-light: hsl(94, 48%, 29%);
-
-  --accent: hsl(281, 35%, 57%);
+  --accent: hsl(227, 53%, 51%);
 }
 
 :root {
-  --font-family: system-ui, Helvetica, Arial, sans-serif;
-  --fw-small: 100;
-  --fw-normal: 400;
-  --fw-large: 900;
+  --font-family: "Inter", Helvetica, Arial, sans-serif;
+  --fw-normal: 500;
+  --fw-large: 700;
 
   --transition: 200ms ease-in-out;
   --hover: var(--primary);
@@ -58,7 +51,7 @@ body {
   overflow-x: hidden;
 
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: var(--fw-normal);
   line-height: 1.5;
 
   background: var(--background);
@@ -108,7 +101,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0.5em 1em;
+  padding: 0.25em 1em;
 }
 
 #menu_icon {
@@ -118,7 +111,7 @@ nav {
 }
 
 .nav_scrolled {
-  box-shadow: 0px 0px 20px -10px var(--text);
+  box-shadow: 0px 0px 20px -10px var(--text-300);
 }
 
 .nav_links {
@@ -129,10 +122,10 @@ nav {
 
 .nav_item {
   position: relative;
-  font-weight: 600;
+  font-weight: var(--fw-large);
   font-size: 1.25em;
   padding: 0.5em;
-  color: var(--primary);
+  color: var(--text-300);
 
   svg {
     height: 2rem;
@@ -190,7 +183,7 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0.5em;
+  bottom: 0.8em;
 
   height: 3px;
   border-radius: 3px;
@@ -225,7 +218,7 @@ nav {
   border-radius: 5px;
   color: #fff;
 
-  background-color: var(--secondary);
+  background-color: var(--accent);
   transition: all var(--transition);
 
   svg {
@@ -242,7 +235,7 @@ nav {
 
 /* Introduction */
 .wrapper {
-  max-width: min(80ch, 90%);
+  max-width: min(75ch, 90%);
   margin-inline: auto;
 }
 
@@ -250,7 +243,7 @@ section {
   scroll-margin-top: 5em;
 
   .section_title {
-    font-weight: 700;
+    font-weight: var(--fw-large);
     font-size: 2.5em;
 
     display: block;
@@ -270,12 +263,16 @@ section {
   text-wrap: balance;
 
   .intro_name {
+    background-image: linear-gradient(45deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
     display: block;
-    color: var(--primary);
-    font-weight: 600;
+    font-weight: var(--fw-large);
     font-size: 3em;
 
-    text-shadow: 0px 1px 2px var(--accent);
+    margin-block: -0.25em;
     margin-left: -0.05em;
   }
 
@@ -308,6 +305,11 @@ img {
   border-radius: 5px;
 }
 
+.highlights {
+  max-width: min(100ch, 90%);
+  margin-inline: auto;
+}
+
 .highlight {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -315,12 +317,9 @@ img {
   gap: 1em;
   padding: 1em 0.5em;
 
-  border-radius: 5px;
-  background: var(--card-background);
-
-  margin-block: 2em;
   width: 100%;
   height: min-content;
+  margin-block-end: 5em;
 
   &:nth-child(even) {
     .project_description {
@@ -344,6 +343,7 @@ img {
 .project_description {
   display: flex;
   flex-direction: column;
+  text-wrap: pretty;
   gap: 0.5em;
 
   .buttons {
@@ -357,7 +357,7 @@ img {
 }
 
 .project_title {
-  font-weight: 700;
+  font-weight: var(--fw-large);
   font-size: 1.5em;
 }
 
@@ -374,10 +374,13 @@ img {
 }
 
 /* Other projects */
-.project {
-  position: relative;
-  margin-top: 1.6em;
+.other_projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
+.project {
   background: var(--card-background);
   padding: 0.5em;
   border-radius: 5px;
@@ -392,25 +395,6 @@ img {
     a:focus {
       color: var(--primary);
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -0.8em;
-
-    height: 2px;
-    width: 50%;
-    opacity: 0.25;
-
-    transform: translateX(50%);
-
-    background-color: var(--text);
-  }
-
-  &:first-child::before {
-    display: none;
   }
 }
 
@@ -460,7 +444,7 @@ textarea {
   margin-inline: auto;
 
   text-align: center;
-  font-weight: 700;
+  font-weight: var(--fw-large);
 
   padding: 0.5rem 2rem;
   border-radius: 5px;
@@ -487,15 +471,25 @@ footer {
   padding: 1em;
   gap: 0.5em;
 
-  background: var(--card-background);
+  background: var(--text-300);
   justify-content: center;
 
-  
+
   flex-wrap: wrap;
 
   .btn {
     margin: 0;
-    background: var(--secondary-light);
+    background: transparent;
+    color: var(--background);
+
+    svg {
+      fill: var(--background);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+    }
   }
 }
 
