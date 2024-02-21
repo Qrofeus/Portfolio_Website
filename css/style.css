@@ -134,7 +134,7 @@ nav {
 
   &:hover,
   &:focus {
-    color: var(--text);
+    color: var(--primary);
   }
 }
 
@@ -201,8 +201,6 @@ nav {
   font-weight: var(--fw-large);
   transform: scaleX(1);
 }
-
-/* ToDo: Responsive navigation - hamburger menu */
 
 .btn {
   --button-color: var(--background);
