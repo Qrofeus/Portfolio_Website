@@ -248,6 +248,7 @@ nav {
 
 section {
   scroll-margin-top: 5em;
+  margin-top: 5em;
 
   .section_title {
     font-weight: var(--fw-large);
@@ -260,7 +261,8 @@ section {
 }
 
 .introduction {
-  min-height: 75svh;
+  min-height: 50svh;
+  max-height: 75svh;
   max-width: min(65ch, 80%);
 
   display: flex;
@@ -367,6 +369,8 @@ img {
 .project_title {
   font-weight: var(--fw-large);
   font-size: 1.5em;
+
+  text-align: left;
 }
 
 .technologies {
@@ -382,29 +386,31 @@ img {
 }
 
 /* Other projects */
-.other_projects {
+.projects_list {
   display: flex;
-  flex-direction: column;
   gap: 1em;
 
-  margin-bottom: 5em;
+  padding-bottom: 1em;
+  overflow-x: auto;
+
+  @media (width < 700px) {
+    flex-direction: column;
+  }
 }
 
 .project {
   background: var(--card-background);
   padding: 0.5em;
   border-radius: 5px;
+  
+  min-width: 60%;
 
   .title_card {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 
     text-wrap: balance;
-
-    a:hover,
-    a:focus {
-      color: var(--primary);
-    }
   }
 }
 
