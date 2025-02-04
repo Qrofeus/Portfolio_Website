@@ -79,7 +79,7 @@ button,
   cursor: pointer;
 }
 
-svg {
+svg {  
   width: 2rem;
   height: 2rem;
 
@@ -90,6 +90,10 @@ svg {
   &:focus {
     fill: var(--primary);
   }
+}
+
+.logo svg {
+  width: auto;
 }
 
 /* Navigation */
@@ -131,11 +135,6 @@ nav {
   font-size: 1.25em;
   padding: 0.5em;
   color: var(--text-300);
-
-  svg {
-    height: 2rem;
-    width: 2rem;
-  }
 
   &:hover,
   &:focus {
